@@ -11,13 +11,26 @@
       name="description"
       content="Minimalistic opinionated Mastodon web client"
     />
-    <meta name="color-scheme" content="dark light" />
-    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <meta name="color-scheme" content="light dark" />
+    <style>
+      :root {
+        --csstools-color-scheme--light: initial;
+        color-scheme: light dark;
+      }
+@media (prefers-color-scheme: dark) {
+      :root:where(:not(.is-light)) {
+        --csstools-color-scheme--light:  ;
+      }
+}
+:root:where(.is-dark) {
+        --csstools-color-scheme--light:  ;
+      }
+    </style>
+    <link rel="stylesheet" crossorigin href="./assets/style-8jk8I7ix.css"><link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Adneydon" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
-    <link rel="canonical" href="https://app.adney.land" />
     <meta
       name=""
       data-theme-setting="manual"
@@ -45,21 +58,42 @@
     />
     <meta name="google" content="notranslate" />
     <link rel="me" href="https://hachyderm.io/@phanpy" />
-
-    <!-- Metacrap https://broken-links.com/2015/12/01/little-less-metacrap/ -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="og:url" content="https://app.adney.land" />
-    <meta property="og:title" content="Adneydon" />
-    <meta
-      property="og:description"
-      content="Minimalistic opinionated Mastodon web client"
-    />
-    <meta property="og:image" content="https://app.adney.land/og-image-2.jpg" />
-    <script type="module" crossorigin src="./assets/main-ayNCIgn2.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/vendor-XmxNLf7D.js">
-    <link rel="modulepreload" crossorigin href="./assets/useTitle-xbXBNfrb.js">
-    <link rel="stylesheet" crossorigin href="./assets/useTitle-cJPm6C4J.css">
-    <link rel="stylesheet" crossorigin href="./assets/main-lND1lDnx.css">
+    <meta name="referrer" content="origin">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="https://app.adney.land">
+    <meta property="og:title" content="Adneydon">
+    <meta property="og:description" content="Minimalistic opinionated Mastodon web client">
+    <meta property="og:image" content="https://app.adney.land/og-image-2.jpg">
+    <link rel="canonical" href="https://app.adney.land">
+    <link rel="alternate" hreflang="en" href="https://app.adney.land/?lang=en">
+    <link rel="alternate" hreflang="ca-ES" href="https://app.adney.land/?lang=ca-ES">
+    <link rel="alternate" hreflang="cs-CZ" href="https://app.adney.land/?lang=cs-CZ">
+    <link rel="alternate" hreflang="de-DE" href="https://app.adney.land/?lang=de-DE">
+    <link rel="alternate" hreflang="eo-UY" href="https://app.adney.land/?lang=eo-UY">
+    <link rel="alternate" hreflang="es-ES" href="https://app.adney.land/?lang=es-ES">
+    <link rel="alternate" hreflang="eu-ES" href="https://app.adney.land/?lang=eu-ES">
+    <link rel="alternate" hreflang="fa-IR" href="https://app.adney.land/?lang=fa-IR">
+    <link rel="alternate" hreflang="fi-FI" href="https://app.adney.land/?lang=fi-FI">
+    <link rel="alternate" hreflang="fr-FR" href="https://app.adney.land/?lang=fr-FR">
+    <link rel="alternate" hreflang="gl-ES" href="https://app.adney.land/?lang=gl-ES">
+    <link rel="alternate" hreflang="it-IT" href="https://app.adney.land/?lang=it-IT">
+    <link rel="alternate" hreflang="ja-JP" href="https://app.adney.land/?lang=ja-JP">
+    <link rel="alternate" hreflang="kab" href="https://app.adney.land/?lang=kab">
+    <link rel="alternate" hreflang="ko-KR" href="https://app.adney.land/?lang=ko-KR">
+    <link rel="alternate" hreflang="lt-LT" href="https://app.adney.land/?lang=lt-LT">
+    <link rel="alternate" hreflang="nl-NL" href="https://app.adney.land/?lang=nl-NL">
+    <link rel="alternate" hreflang="pl-PL" href="https://app.adney.land/?lang=pl-PL">
+    <link rel="alternate" hreflang="pt-BR" href="https://app.adney.land/?lang=pt-BR">
+    <link rel="alternate" hreflang="pt-PT" href="https://app.adney.land/?lang=pt-PT">
+    <link rel="alternate" hreflang="ru-RU" href="https://app.adney.land/?lang=ru-RU">
+    <link rel="alternate" hreflang="uk-UA" href="https://app.adney.land/?lang=uk-UA">
+    <link rel="alternate" hreflang="zh-CN" href="https://app.adney.land/?lang=zh-CN">
+    <link rel="alternate" hreflang="x-default" href="https://app.adney.land">
+    <script type="module" crossorigin src="./assets/main-DxQJqrwZ.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/pwa-viewport-2qMZyqQ2.js">
+    <link rel="modulepreload" crossorigin href="./assets/ICONS-_3cmI60C.js">
+    <link rel="modulepreload" crossorigin href="./assets/ScheduledAtField-BAgcCrL5.js">
+    
   <link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:inline-sw">if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('./sw.js', { scope: './' })})}</script></head>
   <body>
     <div id="app"></div>
